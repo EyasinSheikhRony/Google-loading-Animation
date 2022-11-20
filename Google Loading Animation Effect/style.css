@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+body {
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.ball {
+  animation: 2s loading ease infinite;
+  height: 20px;
+  width: 20px;
+  border-radius: 12px;
+  margin: 0 7px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+  animation-delay: 0.25s;
+}
+
+.yellow {
+  background-color: yellow;
+  animation-delay: 0.5s;
+}
+
+.blue {
+  background-color: blue;
+  animation-delay: 0.75s;
+}
+
+@keyframes loading {
+  50% {
+    transform: translateY(25px);
+  }
+}
